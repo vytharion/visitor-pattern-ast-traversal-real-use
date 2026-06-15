@@ -5,6 +5,7 @@ from visitor_ast.nodes import (
     UnaryOp,
     VariableRef,
 )
+from visitor_ast.visitor import Visitor
 
 __all__ = [
     "BinaryOp",
@@ -12,4 +13,5 @@ __all__ = [
     "NumberLiteral",
     "UnaryOp",
     "VariableRef",
+    "Visitor",
 ]
