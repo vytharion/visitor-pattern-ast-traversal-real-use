@@ -6,6 +6,7 @@ from visitor_ast.nodes import (
     UnaryOp,
     VariableRef,
 )
+from visitor_ast.optimizer import OptimizerVisitor, optimize
 from visitor_ast.pretty_printer import PrettyPrinterVisitor, pretty_print
 from visitor_ast.type_checker import Type, TypeCheckerVisitor, type_check
 from visitor_ast.visitor import Visitor
@@ -15,6 +16,7 @@ __all__ = [
     "EvaluatorVisitor",
     "Node",
     "NumberLiteral",
+    "OptimizerVisitor",
     "PrettyPrinterVisitor",
     "Type",
     "TypeCheckerVisitor",
@@ -22,6 +24,7 @@ __all__ = [
     "VariableRef",
     "Visitor",
     "evaluate",
+    "optimize",
     "pretty_print",
     "type_check",
 ]
