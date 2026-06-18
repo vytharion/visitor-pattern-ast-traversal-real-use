@@ -7,6 +7,7 @@ from visitor_ast.nodes import (
     VariableRef,
 )
 from visitor_ast.pretty_printer import PrettyPrinterVisitor, pretty_print
+from visitor_ast.type_checker import Type, TypeCheckerVisitor, type_check
 from visitor_ast.visitor import Visitor
 
 __all__ = [
@@ -15,9 +16,12 @@ __all__ = [
     "Node",
     "NumberLiteral",
     "PrettyPrinterVisitor",
+    "Type",
+    "TypeCheckerVisitor",
     "UnaryOp",
     "VariableRef",
     "Visitor",
     "evaluate",
     "pretty_print",
+    "type_check",
 ]
